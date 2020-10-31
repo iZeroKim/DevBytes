@@ -15,3 +15,9 @@
  */
 
 package com.example.android.devbyteviewer.database
+
+import android.database.DatabaseUtils
+
+class Room: DatabaseUtils(){
+
+}
