@@ -49,7 +49,7 @@ class DevByteApplication : Application() {
      * Setup WorkManager background job to 'fetch' new network data daily.
      */
     private fun setupRecurringWork(){
-        val repeatingRequest = PeriodicWorkRequestBuilder<RefreshDataWorker>(1, TimeUnit.DAYS).build()
+        val repeatingRequest = PeriodicWorkRequestBuilder<RefreshDataWorker>(15, TimeUnit.MINUTES).build()
 
         Timber.d("Periodic Work request for sync is scheduled")
 
