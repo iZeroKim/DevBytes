@@ -111,4 +111,8 @@ dependencies {
     // optional - Kotlin Extensions and Coroutines support for Room
     implementation "androidx.room:room-ktx:$room_version"
 
+    // WorkManager Kotlin + coroutines
+    def work_version = "2.4.0"
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+
 }
